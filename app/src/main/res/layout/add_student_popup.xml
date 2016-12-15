@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/runPopUp"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/titleDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Student details"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Enter a name for the student: "
+        android:layout_below="@id/titleDialog"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/newStudentName"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/black"
+        android:layout_below="@id/tv"
+        android:inputType="textPersonName"
+        android:hint="Enter name"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Enter ID for student: "
+        android:layout_below="@id/newStudentName"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/newStudentId"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/black"
+        android:layout_below="@id/tv2"
+        android:inputType="number"
+        android:hint="Enter ID"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Enter module for student: "
+        android:layout_below="@id/newStudentId"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/newStudentModule"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/black"
+        android:layout_below="@id/tv3"
+        android:hint="Enter module"/>
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_below="@id/newStudentModule"
+        android:text="Cancel" />
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newStudentModule"
+        android:layout_toLeftOf="@id/cancelBtn"
+        android:layout_margin="5dp"
+        android:text="Submit" />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

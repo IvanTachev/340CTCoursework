@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1015720320688",
+    "firebase_url": "https://ct-coursework.firebaseio.com",
+    "project_id": "ct-coursework",
+    "storage_bucket": "ct-coursework.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015720320688:android:669c0fc05ab8a9be",
+        "android_client_info": {
+          "package_name": "com.example.a340ct.adminapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015720320688-1tnf6a0o5505seg180voirii15bk76df.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLsf5Ua4O9-6KWkV7b_A3LWxcTJgfd8C4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/runPopUp"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    >
+    <TextView
+        android:id="@+id/titleDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Staff details"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Enter a name for the staff: "
+        android:layout_below="@id/titleDialog"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/newStaffName"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/black"
+        android:layout_below="@id/tv"
+        android:inputType="textPersonName"
+        android:hint="Enter name"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Enter ID for staff: "
+        android:layout_below="@id/newStaffName"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/newStaffId"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/black"
+        android:layout_below="@id/tv2"
+        android:inputType="number"
+        android:hint="Enter ID"/>
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_below="@id/newStaffId"
+        android:text="Cancel" />
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newStaffId"
+        android:layout_toLeftOf="@id/cancelBtn"
+        android:layout_margin="5dp"
+        android:text="Submit" />
+</RelativeLayout>

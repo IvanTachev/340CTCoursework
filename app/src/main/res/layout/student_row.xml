@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BBDEFB"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:id="@+id/dynamicLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/studentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name: "
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/studentNameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="67 "
+                android:textSize="16sp"
+                android:layout_margin = "5dp"
+                android:layout_toEndOf="@+id/studentName"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/studentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student ID: "
+                android:textSize="16sp"
+                android:layout_below="@id/studentName"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/studentIDShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="67 "
+                android:textSize="16sp"
+                android:layout_margin = "5dp"
+                android:layout_below="@id/studentNameShow"
+                android:layout_toEndOf="@+id/studentID"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/studentModule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student module: "
+                android:textSize="16sp"
+                android:layout_below="@id/studentID"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/studentModuleShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="67 "
+                android:textSize="16sp"
+                android:layout_margin = "5dp"
+                android:layout_below="@id/studentIDShow"
+                android:layout_toEndOf="@+id/studentModule"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BBDEFB"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:id="@+id/dynamicLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/staffName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Staff Name: "
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/staffNameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="67 "
+                android:textSize="16sp"
+                android:layout_margin = "5dp"
+                android:layout_toEndOf="@+id/staffName"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/staffID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Staff ID: "
+                android:textSize="16sp"
+                android:layout_below="@id/staffName"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/staffIDShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="67 "
+                android:textSize="16sp"
+                android:layout_margin = "5dp"
+                android:layout_below="@id/staffNameShow"
+                android:layout_toEndOf="@+id/staffID"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
